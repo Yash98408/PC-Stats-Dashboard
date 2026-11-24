@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>PC Stats</title><link rel="stylesheet" href="/static/style.css?v=detail11"></head><body>
+<main><section class="hero cpu"><h2>▧　CPU <small id="cpuName"></small></h2><div class="heroBody"><div><strong id="cpuLoad">--</strong><label>Utilization</label></div><aside id="cpuInfo"></aside></div><canvas id="cpuPlot"></canvas></section>
+<section class="hero gpu"><h2>▣　GPU <small id="gpuName"></small></h2><div class="heroBody"><div><strong id="gpuLoad">--</strong><label>Utilization</label></div><aside id="gpuInfo"></aside></div><canvas id="gpuPlot"></canvas></section>
+<section class="ram"><h2>▤　RAM</h2><b id="ram">--</b><progress id="ramBar" max="100"></progress><small id="ramSpeed"></small></section>
+<section class="power"><h2>ϟ　CPU + GPU power</h2><div class="watts"><b id="power">--</b><aside id="breakdown"></aside></div><canvas id="powerPlot"></canvas></section>
+<section class="storage"><h2>▱　Storage</h2><div id="drives"></div></section>
+<section class="net"><h2>⇅　Network</h2><div id="net"></div><canvas id="netPlot"></canvas></section>
+<section class="activity"><header><h2>∿　System activity</h2><nav id="ranges"><button data-min="1">1 min</button><button data-min="5" aria-pressed="true">5 min</button><button data-min="15">15 min</button></nav></header><canvas id="activityPlot"></canvas><small><em>● CPU</em>　<span class="lav">● GPU</span></small></section>
+<section class="cool"><h2>✣　Cooling</h2><div id="fans"></div></section>
+<section class="player"><header><h2>♫　Now playing</h2><small>PC media</small></header><div class="record"><i class="disc"></i><div><b id="title">Waiting for playback</b><small id="artist">Windows media session</small></div></div><div class="seek"><input type="range" id="seek" aria-label="Seek" min="0" max="1000" value="0"><small id="time"></small></div><div class="controls"><button id="shuffle" aria-label="Shuffle" aria-pressed="false">⤨</button><button id="prev" aria-label="Previous track">❮</button><button id="play" aria-label="Play">▶</button><button id="next" aria-label="Next track">❯</button><button id="repeat" aria-label="Repeat track" aria-pressed="false">↻</button><button id="mute" aria-label="Mute">◖))</button><input type="range" id="volume" aria-label="Volume" min="0" max="100" value="65"></div></section>
+<section class="temps"><h2>♨　Temperatures</h2><div id="temps"></div></section><section class="clocks"><h2>◴　Clock speeds</h2><div id="clocks"></div></section><section class="sys"><h2>▣　System</h2><div id="sys"></div><small id="status" role="status">Connecting</small></section>
+</main><script src="/static/app.js?v=detail11"></script><script src="/static/player.js?v=pc-audio12"></script><script src="/static/detail.js?v=11"></script></body></html>
+
+
+
+

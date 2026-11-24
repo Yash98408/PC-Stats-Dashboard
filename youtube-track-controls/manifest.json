@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "PC Stats · YouTube track controls",
+  "version": "1.0",
+  "description": "Expose available YouTube player navigation to Windows and the PC Stats dashboard.",
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*", "https://music.youtube.com/*"],
+    "js": ["track-controls.js"],
+    "run_at": "document_idle",
+    "world": "MAIN"
+  }]
+}
